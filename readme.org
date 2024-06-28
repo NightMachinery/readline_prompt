@@ -2,6 +2,11 @@
 
 * Install
 #+begin_src zsh :eval never
+cargo install --force --git https://github.com/NightMachinery/readline_prompt.git
+#+end_src
+
+If installing locally:
+#+begin_src zsh :eval never
 cargo install --path .
 #+end_src
 
@@ -13,16 +18,19 @@ readline_prompt -h
 #+RESULTS:
 #+begin_results
 Readline Prompt 
+Displays an interactive prompt on stderr and reads user input
 
 USAGE:
-    readline_prompt [ARGS]
+    readline_prompt [prompt default_value]
 
 ARGS:
-    <prompt>           
-    <default_value>    
+    <prompt>           Sets the prompt text (default: '> ')
+    <default_value>    Sets a default value for the input
 
 OPTIONS:
     -h, --help    Print help information
+
+The prompt is written to stderr, and the user's input is output to stdout.
 #+end_results
 
 
