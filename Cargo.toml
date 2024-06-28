@@ -1,0 +1,8 @@
+[package]
+name = "readline_prompt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "3.0"
+rustyline = "9.1"
